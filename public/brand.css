@@ -54,7 +54,17 @@ body {
 .button {
   font-family: "Archivo", Arial, sans-serif;
   font-size: 15px;
+  font-weight: 800;
   text-transform: uppercase;
+}
+
+.conversation-title,
+.avatar {
+  font-weight: 800;
+}
+
+.summary-cell strong {
+  font-weight: 500;
 }
 
 .button:hover {

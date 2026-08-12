@@ -32,6 +32,7 @@ const required = [
   'body::before',
   'display: none',
   'box-shadow: none',
+  'font-weight: 800',
 ];
 
 const missing = required.filter((text) => !source.includes(text));
