@@ -5,18 +5,45 @@ body::before {
   background: var(--mint);
 }
 
-h1,
-h2 {
+body {
+  font-size: 15px;
   font-weight: 400;
-  line-height: .92;
-  letter-spacing: -.052em;
+  line-height: 1.6;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.045em;
   text-transform: uppercase;
 }
 
-h3 {
+.section h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -.035em;
+  text-transform: uppercase;
+}
+
+.section h3,
+.step h3,
+.investment-card h3,
+.package-card h3,
+.scope-column h3,
+.case h3 {
+  font-size: 24px;
   font-family: "Archivo", Arial, sans-serif;
-  font-weight: 800;
-  letter-spacing: -.025em;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+.mono {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .button,
@@ -27,6 +54,7 @@ h3 {
 
 .button {
   font-family: "Archivo", Arial, sans-serif;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
@@ -116,6 +144,17 @@ h1 span {
 
 .prompt::before {
   color: var(--dim);
+}
+
+.hero-lead,
+.section-deck,
+.step p,
+.package-copy,
+.scope-list li,
+.case p,
+.closing-copy {
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .response {
@@ -245,6 +284,13 @@ h1 span {
   color: var(--vapor);
 }
 
+.amount,
+.pending-price .amount {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .pending-label::before {
   background: var(--dim);
 }
@@ -300,8 +346,17 @@ h1 span {
     opacity: .62;
   }
 
-  h1,
-  h2 {
-    letter-spacing: -.045em;
+  .hero h1 {
+    font-size: clamp(44px, 14vw, 54px);
+  }
+
+  .section h2 {
+    font-size: 34px;
+    letter-spacing: -.03em;
+  }
+
+  .amount,
+  .pending-price .amount {
+    font-size: 43px;
   }
 }

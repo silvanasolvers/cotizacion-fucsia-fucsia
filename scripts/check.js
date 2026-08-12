@@ -24,6 +24,11 @@ const required = [
   'Archivo Black',
   'Archivo',
   'JetBrains Mono',
+  'font-size: 64px',
+  'font-size: 40px',
+  'font-size: 24px',
+  'font-size: 15px',
+  'font-size: 12px',
 ];
 
 const missing = required.filter((text) => !source.includes(text));
