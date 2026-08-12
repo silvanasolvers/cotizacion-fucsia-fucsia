@@ -28,3 +28,8 @@
 - La condición mensual de Gestión contable/documental tiene una sección propia: `+$200.000 COP/mes` mientras Fase 2 esté activa; si esta se suspende, la operación, soporte y gestión del módulo se renegocian según el alcance vigente.
 - Validación: `npm run check`, `git diff --check`, health local y producción HTTP 200; revisión visual pública en 1440 × 900 y 390 × 844. Se corrigió el ajuste de línea del titular móvil antes del cierre.
 - Publicación: commits `15fd92a` y `1111641`; despliegue automático Dokploy `lGO7IN3q8QLvVfdlbTAak` en estado `done`.
+
+## Corrección de identidad — símbolos ajenos a Solvers (2026-08-12)
+
+- [x] Retirar los símbolos de infinito del encabezado y el hero; no pertenecen al branding de Solvers.
+- [x] Validar y publicar el ajuste.

@@ -62,6 +62,7 @@ const forbidden = [
   '$2.000.000',
   '$ XXXX COP',
   'Valor pendiente de confirmación',
+  '∞',
 ];
 
 const presentForbidden = forbidden.filter((text) => source.includes(text));
