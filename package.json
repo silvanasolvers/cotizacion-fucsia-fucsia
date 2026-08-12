@@ -1,0 +1,14 @@
+{
+  "name": "cotizacion-fucsia-fucsia",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cotizacion web de SolversAI para habilitar mensajeria en Celeste, agente de Fucsia Fucsia",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node scripts/check.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
