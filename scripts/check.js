@@ -13,7 +13,11 @@ const required = [
   '$79 COP',
   '1.000 mensajes = $79.000 COP',
   'COP · pago único',
-  'Skill de gestión contable y documental',
+  'Skill de crédito y cartera',
+  'Solicitud de crédito',
+  'Carta de instrucciones',
+  'tratamiento de datos',
+  'Búsqueda rápida de personas con créditos',
   '$1.850.000',
   '+$200.000 COP',
   'Fase 2',
@@ -63,6 +67,8 @@ const forbidden = [
   '$ XXXX COP',
   'Valor pendiente de confirmación',
   '∞',
+  'gestión contable',
+  'Gestión contable',
 ];
 
 const presentForbidden = forbidden.filter((text) => source.includes(text));

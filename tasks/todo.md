@@ -33,3 +33,10 @@
 
 - [x] Retirar los símbolos de infinito del encabezado y el hero; no pertenecen al branding de Solvers.
 - [x] Validar y publicar el ajuste.
+
+## Corrección comercial — crédito y cartera (2026-08-12)
+
+- [x] Sustituir el enfoque y el nombre de Gestión contable/documental por Crédito y cartera.
+- [x] Incluir el flujo real: solicitud de crédito, documentos por correo, carta de instrucciones, autorización de tratamiento de datos, factura y búsqueda rápida de créditos.
+- [x] Mantener la habilitación única de `$1.850.000 COP` y la condición de `+$200.000 COP/mes` con Fase 2 activa.
+- [ ] Validar, publicar y comprobar producción.
