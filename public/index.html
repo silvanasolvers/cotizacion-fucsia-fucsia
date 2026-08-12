@@ -4,25 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Cotización de SolversAI para habilitar campañas de mensajería bajo demanda en Celeste, agente de Fucsia Fucsia.">
-  <meta name="theme-color" content="#081210">
+  <meta name="theme-color" content="#131512">
   <title>Fucsia Fucsia × Celeste | Cotización SolversAI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: "Archivo";
+      src: url("/fonts/Archivo-Variable.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Archivo Black";
+      src: url("/fonts/ArchivoBlack-Regular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "JetBrains Mono";
+      src: url("/fonts/JetBrainsMono-Variable.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 100 800;
+      font-display: swap;
+    }
+
     :root {
-      --green-black: #081210;
-      --forest: #0F1F1B;
-      --forest-soft: #14241F;
-      --forest-raised: #1B2E2A;
-      --vapor: #E6F2EE;
-      --mint: #39FFD0;
-      --sage: #B9D4B4;
-      --fuchsia: #E9469B;
-      --fuchsia-soft: #FF8AC6;
-      --muted: #93A8A2;
-      --dim: #5E7570;
-      --line: rgba(230, 242, 238, .13);
+      --green-black: #131512;
+      --forest: #1D201A;
+      --forest-soft: #1D201A;
+      --forest-raised: #1D201A;
+      --vapor: #EDEFE8;
+      --mint: #B4FF39;
+      --sage: #B4FF39;
+      --fuchsia: rgba(237, 239, 232, .62);
+      --fuchsia-soft: #EDEFE8;
+      --coral: #FF6B4A;
+      --muted: rgba(237, 239, 232, .62);
+      --dim: rgba(237, 239, 232, .38);
+      --line: rgba(237, 239, 232, .12);
+      --line-strong: rgba(237, 239, 232, .22);
       --page: min(1240px, calc(100% - 48px));
     }
 
@@ -33,7 +54,7 @@
       margin: 0;
       color: var(--vapor);
       background: var(--green-black);
-      font-family: "Albert Sans", Arial, sans-serif;
+      font-family: "Archivo", Arial, sans-serif;
       line-height: 1.5;
       text-rendering: optimizeLegibility;
     }
@@ -46,7 +67,7 @@
       width: 100%;
       height: 2px;
       content: "";
-      background: linear-gradient(90deg, var(--fuchsia), var(--mint));
+      background: var(--mint);
       transform: scaleX(var(--scroll, 0));
       transform-origin: left;
       pointer-events: none;
@@ -56,7 +77,7 @@
     a { color: inherit; text-decoration: none; }
     button { color: inherit; font: inherit; }
     h1, h2, h3, p { margin: 0; }
-    h1, h2, h3 { font-family: "Syne", Arial, sans-serif; }
+    h1, h2, h3 { font-family: "Archivo Black", "Arial Black", sans-serif; }
 
     .shell { width: var(--page); margin: 0 auto; }
     .mono {
@@ -71,7 +92,7 @@
       z-index: 15;
       top: 0;
       border-bottom: 1px solid var(--line);
-      background: rgba(8, 18, 16, .84);
+      background: rgba(19, 21, 18, .92);
       backdrop-filter: blur(18px);
     }
 
@@ -84,22 +105,8 @@
     }
 
     .brand { display: inline-flex; align-items: center; gap: 12px; }
-    .brand-mark {
-      position: relative;
-      width: 31px;
-      height: 31px;
-      border: 1px solid var(--mint);
-      border-radius: 50%;
-    }
-    .brand-mark::before,
-    .brand-mark::after {
-      position: absolute;
-      content: "";
-      border-radius: 50%;
-    }
-    .brand-mark::before { inset: 7px; border: 1px solid var(--fuchsia); }
-    .brand-mark::after { inset: 12px; background: var(--mint); }
-    .brand strong { display: block; font: 700 12px/1 "Syne", sans-serif; letter-spacing: .16em; }
+    .brand-mark { color: var(--mint); font: 400 32px/.75 "Archivo Black", sans-serif; }
+    .brand strong { display: block; font: 400 15px/1 "Archivo Black", sans-serif; letter-spacing: .04em; }
     .brand small { display: block; margin-top: 5px; color: var(--dim); font: 500 8px/1 "JetBrains Mono", monospace; letter-spacing: .1em; text-transform: uppercase; }
 
     .nav-links { display: flex; align-items: center; gap: clamp(16px, 2.5vw, 34px); }
@@ -244,7 +251,7 @@
     .conversation { overflow: hidden; border: 1px solid #C8D7D2; background: #F4FAF7; box-shadow: 0 30px 90px rgba(8,18,16,.08); }
     .conversation-head { display: flex; align-items: center; justify-content: space-between; padding: 17px 20px; border-bottom: 1px solid #D6E3DF; }
     .conversation-title { display: flex; align-items: center; gap: 10px; font-weight: 700; }
-    .avatar { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 50%; color: white; background: linear-gradient(135deg, var(--fuchsia), #9B2DFF); font: 600 12px/1 "Syne", sans-serif; }
+    .avatar { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid var(--mint); color: var(--green-black); background: var(--mint); font: 700 12px/1 "Archivo", sans-serif; }
     .conversation-status { color: #658079; }
     .messages { min-height: 318px; padding: clamp(24px, 4vw, 46px); background: radial-gradient(circle at 100% 0, rgba(233,70,155,.08), transparent 35%); }
     .bubble { max-width: 76%; padding: 14px 16px; font-size: 14px; line-height: 1.55; }
@@ -269,7 +276,7 @@
     .investment-card { min-height: 430px; padding: clamp(30px, 5vw, 64px); background: var(--green-black); }
     .investment-card.primary { display: flex; flex-direction: column; justify-content: space-between; }
     .investment-card h3 { max-width: 640px; margin-top: 18px; font-size: clamp(32px, 4.4vw, 60px); font-weight: 600; letter-spacing: -.055em; line-height: .98; }
-    .amount { margin-top: 56px; color: var(--mint); font: 600 clamp(42px, 6vw, 78px)/.9 "Syne", sans-serif; letter-spacing: -.07em; }
+    .amount { margin-top: 56px; color: var(--mint); font: 400 clamp(42px, 6vw, 78px)/.9 "Archivo Black", sans-serif; letter-spacing: -.06em; }
     .amount-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 18px; color: var(--muted); }
     .package-card { display: flex; flex-direction: column; background: var(--vapor); color: var(--green-black); }
     .package-card .section-kicker { color: #A51A64; }
@@ -321,7 +328,7 @@
 
     footer { padding: 30px 0; background: var(--green-black); }
     .footer-grid { display: flex; align-items: center; justify-content: space-between; gap: 24px; color: var(--dim); }
-    .footer-grid strong { color: var(--vapor); font-family: "Syne", sans-serif; letter-spacing: .12em; }
+    .footer-grid strong { color: var(--vapor); font-family: "Archivo Black", sans-serif; letter-spacing: .04em; }
 
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
     .reveal.visible { opacity: 1; transform: none; }
@@ -389,12 +396,13 @@
       .reveal { opacity: 1; transform: none; }
     }
   </style>
+  <link rel="stylesheet" href="/brand.css?v=20260812-acid-systems-2">
 </head>
 <body>
   <header class="topbar">
     <div class="shell nav">
       <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-mark" aria-hidden="true">∞</span>
         <span><strong>SOLVERS</strong><small>Sistemas que trabajan</small></span>
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
