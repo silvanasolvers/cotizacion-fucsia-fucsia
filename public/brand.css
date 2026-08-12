@@ -1,8 +1,7 @@
 /* Solvers — Spaceship / Acid Systems · 2026-08-12 */
 
 body::before {
-  height: 2px;
-  background: var(--mint);
+  display: none;
 }
 
 body {

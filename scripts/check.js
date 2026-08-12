@@ -29,6 +29,9 @@ const required = [
   'font-size: 24px',
   'font-size: 15px',
   'font-size: 12px',
+  'body::before',
+  'display: none',
+  'box-shadow: none',
 ];
 
 const missing = required.filter((text) => !source.includes(text));
