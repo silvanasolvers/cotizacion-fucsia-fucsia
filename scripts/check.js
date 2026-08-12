@@ -7,13 +7,18 @@ const source = `${html}\n${brandCss}`;
 const required = [
   'Fucsia Fucsia',
   'Celeste',
+  'Dos módulos independientes',
   'Skill de mensajes masivos',
   '$1.500.000',
+  '$79 COP',
+  '1.000 mensajes = $79.000 COP',
   'COP · pago único',
-  '1.000 mensajes',
-  '$ XXXX COP',
-  'Valor pendiente de confirmación',
-  'Campañas bajo demanda',
+  'Skill de gestión contable y documental',
+  '$1.850.000',
+  '+$200.000 COP',
+  'Fase 2',
+  'Si el servicio mensual de Fase 2 no continúa',
+  'Capacitación',
   'SOLVERS',
   'prefers-reduced-motion',
   '#131512',
@@ -55,6 +60,8 @@ const forbidden = [
   'Alfa Joyería',
   'Duolingo',
   '$2.000.000',
+  '$ XXXX COP',
+  'Valor pendiente de confirmación',
 ];
 
 const presentForbidden = forbidden.filter((text) => source.includes(text));

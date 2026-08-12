@@ -13,3 +13,11 @@
 - Dokploy COTIZACIONES: applicationId `Rpk77AH2J21b1lr8zKy8I`; despliegue inicial `tqT6Qad7EB3BgGct8klh0` en estado `done`.
 - Producción: `https://cotizacion-fucsia-fucsia.solversai.cloud/` y `/health` responden HTTP 200.
 - Vista pública comprobada en 1440 × 900 y 390 × 844, sin overflow horizontal; interacción de ejemplos validada.
+
+## Corrección comercial — dos módulos independientes (2026-08-12)
+
+- [x] Confirmar que Mensajería y Gestión contable/documental son propuestas independientes, conectadas al Celeste existente.
+- [x] Reestructurar la propuesta para mostrar inversión, alcance y condiciones de cada módulo sin mezclarlos.
+- [x] Hacer explícito el consumo de mensajería de `$79 COP` por envío, aparte de su habilitación única.
+- [x] Destacar la condición de gestión mensual de Gestión contable/documental: `+$200.000 COP/mes` únicamente con Fase 2 activa y renegociación si esta se suspende.
+- [ ] Validar contenido, enlaces y comportamiento responsive; publicar la corrección en Dokploy.
